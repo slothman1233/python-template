@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {"name":"Python: Current File","type":"python","request":"launch","program":"${file}","console":"integratedTerminal","justMyCode":true},
+        {
+            "name": "scrapy",
+            "type": "python",
+            "request": "launch",
+            "module":"scrapy",
+           "args": [
+            "crawl",
+            "selenium"
+           ]
+        },
+        {
+            "name": "run",
+            "type": "python",
+            "cwd": "${workspaceFolder}/crawlerScrapy",
+            "request": "launch",
+            "module":"run"
+        },
+        {
+            "name": "threadRun",
+            "type": "python",
+            "cwd": "${workspaceFolder}/crawlerScrapy",
+            "request": "launch",
+            "module":"threadRun"
+        }
+    ]
+}
